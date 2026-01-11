@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pancakes</title>
+    <style>
+        .bg{
+            position: relative;
+            background-image: url("pancakes.jpg");
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+        }
+
+    /* Dark overlay to control opacity */
+        .bg::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.8); /* Adjust the opacity here */
+            z-index: 0;
+        }
+
+    /* Keep content above the overlay */
+        .bg * {
+            position: relative;
+            z-index: 1;
+            color: white;   /* Makes text clearer on darkened bg */
+        }
+        body{
+            background-image: url(pancakes.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        h1{
+            text-align: center;
+            color: darkblue;
+            background-color: rgb(13, 250, 17);
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;;
+            font-size: 30px;
+            font-weight: bold;
+            padding: 20px;
+            margin: 0px;
+        }
+        .btn{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            margin: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Pancake recipe</h1>
+    <div>
+        <h3>Ingredients</h3>
+        <ol>
+            <li>2 cups all-purpose flour</li>
+            <li>2 tablespoons sugar</li>
+            <li>1 teaspoon baking powder</li>
+            <li>1/2 teaspoon baking soda</li>
+            <li>1 pinch salt</li>
+            <li>1 cup milk (adjust as needed)</li>
+            <li>2 tablespoons melted butter or oil</li>
+            <li>1 teaspoon vanilla essence (optional)</li>
+            <li>1 teaspoon lemon juice or vinegar (helps to make them fluffy)</li>
+        </ol>
+        <h3>Instructions</h3>
+        <p>
+            <ol>
+                <li>Mix dry ingredients
+                    <li>In a bowl, mix flour, sugar, baking powder, baking soda, and salt.</li>
+                </li>
+                <li>Mix wet ingredients
+                    <li>In another bowl, mix milk, melted butter (or oil), vanilla, and lemon juice.</li>
+                </li>
+                <li>
+                    Combine dry and wet ingredients
+                    <li>Gradually add the dry ingredients to the wet ingredients, stirring until just combined.</li>
+                </li>
+                <li>
+                    Cook pancakes
+                    <li>Heat a non-stick pan over medium heat. Pour batter onto the pan, using about 1/4 cup for each pancake.</li>
+                </li>
+                <li>
+                    Flip and cook until golden brown on both sides.
+                </li>
+                <li>
+                    Serve hot with syrup, butter, or your favorite toppings.
+                </li>
+            </ol>
+        </p>
+    </div>
+    <div class="btn">
+        <button>
+            <a href="recipes.html">Back to recipes</a>
+        </button>
+    </div>
+
+    
+</body>
+</html>

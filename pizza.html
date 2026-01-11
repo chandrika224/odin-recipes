@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza</title>
+    <style>
+    
+        .bg{
+            position: relative;
+            background-image: url("pizza.jpg");
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+        }
+
+    /* Dark overlay to control opacity */
+        .bg::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.8); /* Adjust the opacity here */
+            z-index: 0;
+        }
+
+    /* Keep content above the overlay */
+        .bg * {
+            position: relative;
+            z-index: 1;
+            color: white;   /* Makes text clearer on darkened bg */
+        }
+        
+        h1{
+            text-align: center;
+            color: darkblue;
+            background-color: rgb(13, 250, 17);
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 30px;
+            font-weight: bold;
+            padding: 20px;
+            margin: 0px;
+        }
+        .btn{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            margin: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Pizza Recipe</h1>
+
+    <div>
+        <h3>Ingredients</h3>
+
+        <ol>
+            <li>2 cups all-purpose flour</li>
+            <li>1 teaspoon instant yeast</li>
+            <li>1 teaspoon sugar</li>
+            <li>1/2 teaspoon salt</li>
+            <li>3/4 cup warm water</li>
+            <li>1 tablespoon olive oil</li>
+            <li>1/2 cup pizza sauce</li>
+            <li>1 cup mozzarella cheese</li>
+            <li>1/2 cup chopped capsicum</li>
+            <li>1/2 cup chopped onion</li>
+            <li>1/2 cup sweet corn (optional)</li>
+            <li>1/2 cup sliced olives (optional)</li>
+            <li>1 teaspoon chili flakes</li>
+            <li>1 teaspoon oregano</li>
+        </ol>
+
+        <h3>Instructions</h3>
+
+        <p>
+            <ol>
+                <li>Prepare the dough
+                    <li>Mix flour, sugar, yeast, and salt. Add warm water and olive oil.</li>
+                    <li>Knead into a soft dough, cover, and rest for 1 hour.</li>
+                </li>
+
+                <li>Prepare the base
+                    <li>Punch the dough and roll into a round pizza base.</li>
+                    <li>Use a fork to prick holes to avoid air bubbles.</li>
+                </li>
+
+                <li>Add toppings
+                    <li>Spread pizza sauce on the base.</li>
+                    <li>Add cheese, capsicum, onion, corn, olives, and any toppings you like.</li>
+                </li>
+
+                <li>Bake the pizza
+                    <li>Bake at 200°C for 12–15 minutes until the crust is golden and cheese melts.</li>
+                </li>
+
+                <li>Garnish and serve
+                    <li>Sprinkle chili flakes and oregano before serving hot.</li>
+                </li>
+            </ol>
+        </p>
+    </div>
+
+    <div class="btn" >
+        <button>
+            <a href="recipes.html">Back to recipes</a>
+        </button>
+    </div>
+
+</body>
+</html>

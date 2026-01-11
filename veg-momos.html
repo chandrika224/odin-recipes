@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veg Momos</title>
+    <style>
+    .bg{
+        position: relative;
+        background-image: url("veg-momos.jpg");
+        background-size: cover;
+        background-position: center;
+        padding: 20px;
+    }
+
+    /* Dark overlay to control opacity */
+    .bg::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.8); /* Adjust the opacity here */
+        z-index: 0;
+    }
+
+    /* Keep content above the overlay */
+    .bg * {
+        position: relative;
+        z-index: 1;
+        color: white;   /* Makes text clearer on darkened bg */
+    }
+
+    h1{
+        text-align: center;
+        color: darkblue;
+        background-color: rgb(13, 250, 17);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 30px;
+        font-weight: bold;
+        padding: 20px;
+        margin: 0px;
+    }
+
+    ol{
+        opacity: 1;
+        color: white;
+    }
+
+    .btn{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 20px;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 10px;
+    }
+
+    </style>
+</head>
+<body>
+
+    <h1>Veg Momos Recipe</h1>
+
+    <div class="bg">
+        <h3>Ingredients</h3>
+
+        <ol>
+            <li>1 cup all-purpose flour (for dough)</li>
+            <li>1/4 teaspoon salt</li>
+            <li>Water (as needed for dough)</li>
+            <li>1 tablespoon oil</li>
+            <li>1 cup grated cabbage</li>
+            <li>1/2 cup grated carrot</li>
+            <li>1/2 cup finely chopped capsicum</li>
+            <li>1/2 cup finely chopped onion</li>
+            <li>1 tablespoon ginger-garlic paste</li>
+            <li>1 teaspoon soy sauce</li>
+            <li>1 teaspoon vinegar</li>
+            <li>1/2 teaspoon black pepper</li>
+            <li>Salt to taste</li>
+            <li>1 tablespoon oil (for stuffing)</li>
+        </ol>
+
+        <h3>Instructions</h3>
+
+        <ol>
+            <li>Prepare the dough:
+                <ul>
+                    <li>Mix flour, salt, and water to make a soft dough. Cover and rest for 15 minutes.</li>
+                </ul>
+            </li>
+
+            <li>Prepare the stuffing:
+                <ul>
+                    <li>Heat oil in a pan and sauté onions.</li>
+                    <li>Add cabbage, carrot, capsicum, and cook for 3–4 minutes.</li>
+                    <li>Add ginger-garlic paste, soy sauce, vinegar, pepper, and salt.</li>
+                    <li>Mix well and cool the mixture.</li>
+                </ul>
+            </li>
+
+            <li>Shape the momos:
+                <ul>
+                    <li>Roll the dough into small thin circles.</li>
+                    <li>Place 1 spoon stuffing in the center and fold into shape.</li>
+                </ul>
+            </li>
+
+            <li>Steam the momos:
+                <ul>
+                    <li>Steam for 10–12 minutes.</li>
+                </ul>
+            </li>
+
+            <li>Serve hot:
+                <ul>
+                    <li>Enjoy with red chutney or momo dip.</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+
+    <div class="btn">
+        <button>
+            <a href="recipes.html">Back to recipes</a>
+        </button>
+    </div>
+
+</body>
+</html>
