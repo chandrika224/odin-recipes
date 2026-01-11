@@ -35,3 +35,53 @@ It includes multiple recipe pages, a fixed navigation bar with a dropdown menu, 
 
 ## 📂 Project Structure
 
+odin-recipes/
+│
+├── index.html
+├── recipes.html
+├── pancakes.html
+├── bread-pudding.html
+├── veg-momos.html
+├── cheesecake.html
+├── pizza.html
+│
+├── images/
+│ ├── pancakes.jpg
+│ ├── bread-pudding.jpg
+│ ├── veg-momos.jpg
+│ ├── cheesecake.jpg
+│ └── pizza.jpg
+│
+└── README.md
+
+
+---
+
+## 🎯 Learning Outcomes
+
+- Understanding HTML page structure
+- Creating navigation bars and dropdown menus using CSS
+- Using Flexbox for layout design
+- Handling user interactions with JavaScript events
+- Improving UI/UX using hover effects and transitions
+- Organizing a multi-page front-end project
+
+---
+
+## 🚀 How to Run the Project
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/odin-recipes.git
+Open index.html in your browser.
+
+📌 Project Purpose
+
+This project was built to practice front-end development fundamentals and to gain hands-on experience in building a simple yet interactive website from scratch.
+
+🙌 Acknowledgements
+
+The Odin Project
+
+Font Awesome for icons
+
